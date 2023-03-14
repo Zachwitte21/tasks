@@ -204,9 +204,7 @@ export function changeQuestionTypeById(
     const newArray = questions.map(
         (question: Question): Question =>
             question.id === targetId
-                ? newQuestionType.toString() === "short_answer_questions"
-                    ? { ...question, options: [], type: newQuestionType }
-                    : { ...question, type: newQuestionType, options: [] }
+                ? { ...question, type: newQuestionType, options: [] }
                 : question
     );
     return newArray;
