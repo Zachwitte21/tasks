@@ -1,6 +1,3 @@
 import { useState } from "react";
 
-export interface DoubleHalfProps {
-    setDhValue: (newvalue: number) => void;
-    dhValue: number;
-}
+export const [dhValue, setDhValue] = useState<number>(10);
