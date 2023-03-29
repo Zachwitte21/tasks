@@ -11,15 +11,14 @@ import { ColoredBox } from "./bad-components/ColoredBox";
 import { ShoveBox } from "./bad-components/ShoveBox";
 import { ChooseTeam } from "./bad-components/ChooseTeam";
 
-export function App(): JSX.Element {
+function App(): JSX.Element {
     return (
         <div className="App">
             <header className="App-header">
-                Zachary Witte UD CISC275 with React Hooks and TypeScript. Hello
-                World
+                UD CISC275 with React Hooks and TypeScript
             </header>
             <hr></hr>
-            {/* <DoubleHalf></DoubleHalf> */}
+            {<DoubleHalf></DoubleHalf>}
             <hr></hr>
             <ChooseTeam></ChooseTeam>
             <hr></hr>
@@ -38,6 +37,7 @@ export function App(): JSX.Element {
             <ChangeType></ChangeType>
             <hr />
             <CycleHoliday></CycleHoliday>
+            <h1>Welcome To My Website! Hello World!</h1>
         </div>
     );
 }
